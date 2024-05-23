@@ -30,7 +30,7 @@ public class CuentaPeso extends Cuenta{
             System.out.println("Retiro fallido, intente nuevamente con un monto menor");
             return false;
         }
-        balance -= retiro; //Se realiza un cobro de $200 por retirar dinero
+        balance -= retiro;
         System.out.println("Retiro realizado con éxito");
         return true;
     }
@@ -38,4 +38,6 @@ public class CuentaPeso extends Cuenta{
     public void resetSaldo(){
         depositoActual = 0;
     }
+
+
 }
